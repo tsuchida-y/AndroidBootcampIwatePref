@@ -9,7 +9,7 @@ import com.example.androidbootcampiwatepref.ui.theme.AndroidBootcampIwatePrefThe
 import com.example.androidbootcampiwatepref.viewmodel.MainViewModel
 
 class MainActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {//アプリ起動時に一度だけ呼ばれる
         super.onCreate(savedInstanceState)
         val dataStore = AppDataStore(applicationContext)
         val mainViewModel = MainViewModel(dataStore)
